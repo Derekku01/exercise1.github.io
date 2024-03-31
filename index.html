@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rebeccapurple;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+      .container {
+        color: #fff;
+        text-align: center;
+        border: 3px solid;
+        border-radius: 35px;
+        padding: 20px;
+        width: 50%;
+        height: 30%;
+        box-shadow: 10px 5px 5px #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>JavaScript Objects</h2>
+      <p id="demo"></p>
+      <p id="2demo"></p>
+      <p id="3demo"></p>
+      <p id="4demo"></p>
+      <p id="5demo"></p>
+    </div>
+    <script>
+      const person = {
+        firstName: "Dereck",
+        lastName: "Camigla",
+        age: 16,
+        eyeColor: "Brown",
+      };
+      const cartype = {
+        carName: "2024 Toyota Gr Supra",
+        carPrice: "$55,595",
+        engine: "turbocharged 3.0-liter inline 6-cylinder engine.",
+      };
+      const anime = {
+        animeTitle: "Mashle: Magic and Muscles",
+        anineGenre: "Action",
+        animeYR: "2023",
+      };
+      const city = {
+        cityName: "New York City",
+        cityFamous: "Midtown City",
+        cityLocation:
+          "northeastern United States, in southeastern New York State,",
+      };
+      const animal = {
+        animalName: "Elephant",
+        animalType: "Carnivore",
+        animalColor: " grayish black",
+      };
+      document.getElementById("demo").innerHTML =
+        person.firstName +
+        " " +
+        person.lastName +
+        " is " +
+        person.age +
+        " years old. " +
+        "His eyes color is " +
+        person.eyeColor;
+
+      document.getElementById("2demo").innerHTML =
+        cartype.carName +
+        " is a latest car of Supra and it cost of " +
+        cartype.carPrice +
+        ". The engine type of the 2024 Toyota Gr Supra is " +
+        cartype.engine;
+
+      document.getElementById("3demo").innerHTML =
+        anime.animeTitle +
+        " is a " +
+        anime.anineGenre +
+        " anime that will be released on " +
+        anime.animeYR;
+
+      document.getElementById("4demo").innerHTML =
+        city.cityName +
+        " famous as " +
+        city.cityFamous +
+        " because New York many travelers imagine, with the flashing billboards of Times Square and looming skyscrapers. " +
+        city.cityLocation +
+        " are located in " +
+        city.cityLocation;
+
+      document.getElementById("5demo").innerHTML =
+        animal.animalName +
+        " is a " +
+        animal.animalType +
+        " and its color is " +
+        animal.animalColor;
+    </script>
+  </body>
+</html>
